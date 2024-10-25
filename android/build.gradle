@@ -1,33 +1,14 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.4'  // Updated Gradle version
-    }
-}
-
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33                 // Updated to a more recent SDK version
+    compileSdkVersion 33              // Updated to a recent SDK version
     buildToolsVersion "33.0.0"
 
     defaultConfig {
-        minSdkVersion 21                 // Updated to a more recent minimum SDK version
-        targetSdkVersion 33              // Updated to match compile SDK
-        versionCode 2
-        versionName "1.0.1"
-    }
-    lintOptions {
-        abortOnError false
-    }
-    sourceSets {
-        main {
-            aidl.srcDirs = ['src/main/java']
-        }
+        minSdkVersion 21              // Updated to a more recent minimum SDK version
+        targetSdkVersion 33           // Updated to match compile SDK
+        versionCode 1
+        versionName "1.0"
     }
 }
 
@@ -37,5 +18,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.facebook.react:react-native:0.71.0'  // Specify RN version
-    implementation "com.google.zxing:core
+    implementation 'com.facebook.react:react-native:0.71.0'  // Specify a specific RN version
+}
