@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.uruzsolusiteknologi.sunmi.printer">
+          package="com.uruzsolusiteknologi.sunmi">
 
     <application>
         <receiver android:name="com.sunmi.v2.printer.PrinterReceiver"
