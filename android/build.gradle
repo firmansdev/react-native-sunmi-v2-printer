@@ -1,4 +1,4 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 33              // Updated to a recent SDK version
@@ -10,13 +10,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
-}
 
-repositories {
-    google()
-    mavenCentral()
-}
+    repositories {
+        google()
+        mavenCentral()
+    }
 
-dependencies {
-    implementation 'com.facebook.react:react-native:0.71.0'  // Specify a specific RN version
+    dependencies {
+        implementation files('libs/sunmi-printer-sdk.jar')  // Path to the downloaded .jar file
+        implementation 'com.facebook.react:react-native:0.71.0'  // Specify a specific RN version
+    }
 }
